@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo docker run --name tester1 -i --rm \
+--env "App.HttpTester.target_url=http://google.com/" \
+--env "App.HttpTester.requests_per_second=100" \
+httptester:v1
